@@ -22,5 +22,9 @@ print(ports, "\n")
 ports = port_scanner.get_open_ports("scanme.nmap.org", [20, 80], True)
 print(ports, "\n")
 
+ports = port_scanner.get_open_ports("209.216.230.240", [440, 445])
+print("Test manual:", ports)
+
 # Run unit tests automatically
-main(module = "test_module", exit = False)
+main(module="test_module", exit=False)
+
